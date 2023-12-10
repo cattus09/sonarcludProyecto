@@ -1,0 +1,15 @@
+/home/sergio/Documentos/universidad/2023-2/ARSW/proyecto/BackProject/CheckersPlay/checkers/src/main/java/edu/eci/arsw/checkers/model/Casilla.java
+/home/sergio/Documentos/universidad/2023-2/ARSW/proyecto/BackProject/CheckersPlay/checkers/src/main/java/edu/eci/arsw/checkers/model/Dama.java
+/home/sergio/Documentos/universidad/2023-2/ARSW/proyecto/BackProject/CheckersPlay/checkers/src/main/java/edu/eci/arsw/checkers/JuegoMain.java
+/home/sergio/Documentos/universidad/2023-2/ARSW/proyecto/BackProject/CheckersPlay/checkers/src/main/java/edu/eci/arsw/checkers/model/Juego.java
+/home/sergio/Documentos/universidad/2023-2/ARSW/proyecto/BackProject/CheckersPlay/checkers/src/main/java/edu/eci/arsw/checkers/dto/CasillaDTO.java
+/home/sergio/Documentos/universidad/2023-2/ARSW/proyecto/BackProject/CheckersPlay/checkers/src/main/java/edu/eci/arsw/checkers/model/Ficha.java
+/home/sergio/Documentos/universidad/2023-2/ARSW/proyecto/BackProject/CheckersPlay/checkers/src/main/java/edu/eci/arsw/checkers/dto/MovimientoDTO.java
+/home/sergio/Documentos/universidad/2023-2/ARSW/proyecto/BackProject/CheckersPlay/checkers/src/main/java/edu/eci/arsw/checkers/service/JuegoService.java
+/home/sergio/Documentos/universidad/2023-2/ARSW/proyecto/BackProject/CheckersPlay/checkers/src/main/java/edu/eci/arsw/checkers/model/Tablero.java
+/home/sergio/Documentos/universidad/2023-2/ARSW/proyecto/BackProject/CheckersPlay/checkers/src/main/java/edu/eci/arsw/checkers/controller/WebSocketConfig.java
+/home/sergio/Documentos/universidad/2023-2/ARSW/proyecto/BackProject/CheckersPlay/checkers/src/main/java/edu/eci/arsw/checkers/model/Jugador.java
+/home/sergio/Documentos/universidad/2023-2/ARSW/proyecto/BackProject/CheckersPlay/checkers/src/main/java/edu/eci/arsw/checkers/controller/JuegoController.java
+/home/sergio/Documentos/universidad/2023-2/ARSW/proyecto/BackProject/CheckersPlay/checkers/src/main/java/edu/eci/arsw/checkers/dto/TableroDTO.java
+/home/sergio/Documentos/universidad/2023-2/ARSW/proyecto/BackProject/CheckersPlay/checkers/src/main/java/edu/eci/arsw/checkers/dto/FichaDTO.java
+/home/sergio/Documentos/universidad/2023-2/ARSW/proyecto/BackProject/CheckersPlay/checkers/src/main/java/edu/eci/arsw/checkers/dto/JuegoDTO.java
