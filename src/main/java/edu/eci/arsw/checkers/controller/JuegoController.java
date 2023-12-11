@@ -6,6 +6,7 @@ import edu.eci.arsw.checkers.service.JuegoService;
 import edu.eci.arsw.checkers.service.PlayerPowerThread;
 
 import java.util.Map;
+import java.util.regex.Pattern;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
@@ -13,7 +14,7 @@ import org.springframework.messaging.simp.SimpMessagingTemplate;
 /**
  * Controlador que gestiona las operaciones relacionadas con el juego de damas.
  */
-@CrossOrigin(origins = "*") 
+@CrossOrigin(origins = {"http://20.22.63.5", "http://20.22.63.5:8080", "http://checkers.eastus.cloudapp.azure.com" , "http://checkersplay.azurewebsites.net/", "http://172.178.33.192/" ,"http://scheckersplay.eastus.cloudapp.azure.com/"})
 @RestController
 @RequestMapping("/api/juego")
 public class JuegoController {
@@ -95,7 +96,11 @@ public class JuegoController {
      */
     @PostMapping("/registrar-usuario")
     public ResponseEntity<String> registrarUsuario(@RequestParam String nombre, @RequestParam String token) {
+        String caracteresEsp = "^[a-zA-Z0-9]+$";
         System.out.println(token);
+        if (!Pattern.matches(caracteresEsp, nombre) || !Pattern.matches(caracteresEsp, token)) {
+            return ResponseEntity.badRequest().body("Datos de entrada inválidos.");
+        }
         try {
             juegoService.registrarUsuario(nombre, token);
             return ResponseEntity.ok("Usuario registrado exitosamente.");
@@ -124,7 +129,8 @@ public class JuegoController {
         messagingTemplate.convertAndSend("/topic/hidebutton", "hide");
         String jugador = request.get("jugador");
         System.out.println("jugador: " + jugador);
-        PlayerPowerThread.run(jugador,juegoService);
+        PlayerPowerThread playerPowerThread = new PlayerPowerThread(lock);  
+        playerPowerThread.run(jugador, juegoService);
         return ResponseEntity.ok("Poder usado exitosamente");
     }
 
